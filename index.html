@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Information App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Information App</h1>
+            <input type="text" id="search-input" placeholder="Search for a movie..." />
+            <button onclick="searchMovies()">Search</button>
+        </header>
+
+        <section id="movie-results" class="movie-results"></section>
+
+        <section id="watchlist" class="watchlist">
+            <h2>Your Watchlist</h2>
+            <div id="watchlist-movies"></div>
+        </section>
+    </div>
+
+    <!-- Movie Details Modal -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="movie-details"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
